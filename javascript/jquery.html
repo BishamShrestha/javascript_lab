@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show/Hide with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button id="showBtn">Show</button>
+    <button id="hideBtn">Hide</button>
+    <p id="myElement" style="display: none;">Whats up guys!!!</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#showBtn").click(function () {
+                $("#myElement").show();
+            });
+
+            $("#hideBtn").click(function () {
+                $("#myElement").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

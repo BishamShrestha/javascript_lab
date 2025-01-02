@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="create()">Create Element</button>
+    <div id="container"></div>
+
+    <script>
+        function create() {
+            let newElement = document.createElement('p'); // Create a new <p> element
+            newElement.textContent = "You clicked the button"; // Set its text content
+            document.getElementById('container').appendChild(newElement); // Add it to the container
+        }
+    </script>
+</body>
+
+</html>

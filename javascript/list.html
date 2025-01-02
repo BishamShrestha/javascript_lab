@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ul id="employeeList"></ul>
+
+    <script>
+        let employees = [
+            { name: "Bisham Shrestha", age: 21, designation: "UI/UX Designer" },
+            { name: "Sumit Shrestha", age: 23, designation: "Backend Developer" },
+            { name: "Prajjwal Shrestha", age: 22, designation: "Project Manager" }
+        ];
+
+        let ul = document.getElementById('employeeList');
+        employees.forEach(employee => {
+            let li = document.createElement('li');
+            li.textContent = `Name: ${employee.name}, Age: ${employee.age}, Designation: ${employee.designation}`;
+            ul.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>
